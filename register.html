@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            background-color: grey;
+        }
+
+        .mainbody {
+            display: flex;
+            padding: 20px;
+            width: 70%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+
+        .mainbody input {
+            display: flex;
+            padding: 10px;
+            font-size: larger;
+            margin: 20px;
+            border-radius: 20px;
+            border: none;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .mainbody label {
+            font-size: 25px;
+        }
+
+        .mainbody select {
+            font-size: larger;
+        }
+
+        .mainbody {
+            background: linear-gradient(white, black);
+            border-top: 2px solid black;
+            border-radius: 40px;
+        }
+
+        @media(max-width:400px) {
+            .mainbody {
+                height: 75vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1
+            style="text-align: center;font-size: 40px;border-top: 4px solid white;border-right: 4px solid white; border-left: 4px solid white; border-radius: 30px;">
+            Register<span style="color: red;"> Here</span></h1>
+        <div class="mainbody">
+            <form action="done.html" method="">
+                <input type="text" name="name" placeholder="Enter Your Name*" required>
+                <input type="email" name="email" placeholder="xyz@gmail.com*" required>
+                <input type="password" name="password" placeholder="password*" required>
+                <input type="number" name="scholar" placeholder="Enter Scholar Number*" required>
+                <input type="number" name="Mob" placeholder="Enter Mobile no." required>
+                <label>Branch:</label>
+                <select name="branch" id="branch" required>
+                    <option value="">Select your branch*</option>
+                    <option value="Electrical">Electrical</option>
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="Civil">Civil</option>
+                    <option value="">Mech</option>
+                    <option value="">MME</option>
+
+                </select>
+                <input type="submit" name="submit"
+                    style="background-color: grey;cursor: pointer; color:beige;width:85%;">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
